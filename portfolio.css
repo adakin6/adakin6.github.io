@@ -24,6 +24,16 @@ body{
   font-family: 'PlayfairDisplay';
 }
 
+a {
+  color: #0E4690;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #fff;
+}
+
 /* ======== Nav styles ======== */
 
 .wrap-nav {
@@ -33,6 +43,7 @@ body{
   padding-right: 1em;
   z-index: 999;
 }
+
 nav ul {
   display: flex;
   margin: 0 auto;
@@ -104,7 +115,7 @@ h1{
 
 .javascript-icon {
   border-radius: 20%;
-  margin:1em 0 0 1em; 
+  margin:1em 0 0 1em;
 }
 
 .projects-icons {
@@ -175,7 +186,7 @@ h3 + p {
 }
 
 @media (min-width: 376px) {
-  
+
   #intro {
     margin: 0 0 0 20%;
     padding-top: 300px;
@@ -188,11 +199,11 @@ h3 + p {
     margin: 0 0 0 25%;
     padding-top: 300px;
   }
-  
+
 }
 
 @media (min-width: 568px) {
-  
+
   header {
     display: flex;
     align-items: center;
@@ -201,37 +212,37 @@ h3 + p {
     margin: 0 auto;
     padding-top: 0;
   }
-  
+
   .content-padding {
     padding: 2.5em 0 3em 15%;
   }
-  
+
   .goals-icons {
     flex-direction: row;
   }
-  
+
 }
 
 @media (min-width: 656px) {
-  
+
   .about-text {
     width: 55%;
     max-width: 700px;
   }
-  
+
   nav ul {
     justify-content: flex-start;
   }
-  
+
   li a {
     margin-left: 1em;
   }
-  
+
   .projects-icons {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .project-container {
     width: 350px;
     height: 263px;
@@ -240,29 +251,29 @@ h3 + p {
 }
 
 @media (min-width: 1000px) {
-  
+
   .content-padding {
     padding: 2.5em 0 3em 0;
     text-align: center;
   }
-  
+
   .about-text {
     margin:0 auto ;
   }
-  
+
   .goals-icons {
     padding: 0;
     justify-content: space-around;
   }
-  
+
   .projects-icons {
     padding: 2em 0 0 0;
     justify-content: space-around;
   }
-  
+
   #contact {
     text-align: left;
     padding-left: 10%;
   }
-  
+
 }
