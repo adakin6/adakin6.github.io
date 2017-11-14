@@ -114,8 +114,9 @@ h1{
 }
 
 .javascript-icon {
-  border-radius: 20%;
-  margin:1em 0 0 1em;
+  margin: 1em 0 0 1em;
+  width: 87px;
+  height: auto;
 }
 
 .projects-icons {
@@ -196,6 +197,12 @@ h3 + p {
   #intro {
     margin: 0 0 0 20%;
     padding-top: 300px;
+  }
+}
+
+@media (min-width: 396px) {
+  .javascript-icon {
+    margin: 0 3%;
   }
 }
 
