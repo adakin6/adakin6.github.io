@@ -174,16 +174,22 @@ h3 {
   display: inline-block;
 }
 
+#contact {
+  max-width: 800px;
+}
+
 .social{
   display: block;
   width: 40px;
-  float: right;
-  margin-right: 10%;
+  float: left;
+  margin: 5% 10% 5% 0;
 }
 
 h3 + p {
   margin: 0;
 }
+
+/* ======== Media Queries ======== */
 
 @media (min-width: 376px) {
 
@@ -254,16 +260,26 @@ h3 + p {
 
   .content-padding {
     padding: 2.5em 0 3em 0;
-    text-align: center;
   }
 
   .about-text {
-    margin:0 auto ;
+    margin: 0 auto;
+    max-width: 580px;
+  }
+
+  .goals-content {
+    margin: 0 auto;
+    max-width: 580px;
+    text-align: center;
   }
 
   .goals-icons {
     padding: 0;
     justify-content: space-around;
+  }
+
+  .projects-content {
+    text-align: center;
   }
 
   .projects-icons {
