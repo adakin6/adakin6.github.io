@@ -1,0 +1,268 @@
+
+/* ======== FONTS ======== */
+
+@font-face {
+  font-family: 'JoseFinSans Bold';
+  src: url("fonts/josefinsans/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url("fonts/playfairdisplay/PlayfairDisplay-Regular.ttf");
+}
+
+/* ======== Universal border-box ======== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ======== Body ======== */
+
+body{
+  color: white;
+  font-family: 'PlayfairDisplay';
+}
+
+/* ======== Nav styles ======== */
+
+.wrap-nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0, 0.8);
+  padding-right: 1em;
+  z-index: 999;
+}
+nav ul {
+  display: flex;
+  margin: 0 auto;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 1em 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+li a:hover {
+  color: #ccc;
+}
+
+/* ======== Header styles and subheadings ======== */
+
+header {
+  height: 100vh;
+  background-image: url("imgs/stars-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-family: 'JoseFinSans Bold';
+}
+
+h1{
+  margin: 0 auto;
+  font-size: 5em;
+}
+
+#intro {
+  margin: 0 0 0 17%;
+  padding-top: 80%;
+}
+
+/* ======== Reused padding and backgrounds ======== */
+
+.content-padding {
+  padding: 2.5em 0 3em 10%;
+}
+.dark-background {
+  background: #0F1221;
+}
+
+.light-background {
+  background: #0E4690;
+}
+
+/* ======== Section styles ======== */
+
+.about-text {
+  max-width: 80%;
+}
+
+.goals-icons {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  align-self: center;
+  padding-top: 1em;
+  padding-right: 3em;
+}
+
+.javascript-icon {
+  border-radius: 20%;
+  margin:1em 0 0 1em; 
+}
+
+.projects-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 10% 0 0;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container {
+  position: relative;
+  width: 70%;
+  margin: 5%;
+}
+
+.project {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #000;
+}
+
+.project-container:hover .overlay {
+  opacity: 0.75;
+}
+
+.overlay-text {
+  position: absolute;
+  font-size: 1.3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer {
+  color: black;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2em;
+  display: inline-block;
+}
+
+.social{
+  display: block;
+  width: 40px;
+  float: right;
+  margin-right: 10%;
+}
+
+h3 + p {
+  margin: 0;
+}
+
+@media (min-width: 376px) {
+  
+  #intro {
+    margin: 0 0 0 20%;
+    padding-top: 300px;
+  }
+}
+
+@media (min-width: 426px) {
+
+  #intro {
+    margin: 0 0 0 25%;
+    padding-top: 300px;
+  }
+  
+}
+
+@media (min-width: 568px) {
+  
+  header {
+    display: flex;
+    align-items: center;
+  }
+  #intro {
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  
+  .content-padding {
+    padding: 2.5em 0 3em 15%;
+  }
+  
+  .goals-icons {
+    flex-direction: row;
+  }
+  
+}
+
+@media (min-width: 656px) {
+  
+  .about-text {
+    width: 55%;
+    max-width: 700px;
+  }
+  
+  nav ul {
+    justify-content: flex-start;
+  }
+  
+  li a {
+    margin-left: 1em;
+  }
+  
+  .projects-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .project-container {
+    width: 350px;
+    height: 263px;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  
+  .content-padding {
+    padding: 2.5em 0 3em 0;
+    text-align: center;
+  }
+  
+  .about-text {
+    margin:0 auto ;
+  }
+  
+  .goals-icons {
+    padding: 0;
+    justify-content: space-around;
+  }
+  
+  .projects-icons {
+    padding: 2em 0 0 0;
+    justify-content: space-around;
+  }
+  
+  #contact {
+    text-align: left;
+    padding-left: 10%;
+  }
+  
+}
