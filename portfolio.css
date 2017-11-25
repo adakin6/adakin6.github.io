@@ -272,6 +272,7 @@ h3 + p {
   .about-text {
     margin: 0 auto;
     max-width: 580px;
+    text-align: center;
   }
 
   .goals-content {
